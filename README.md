@@ -204,7 +204,7 @@ inspecao_pintura_author = "Nome do autor"
 inspecao_pintura_approved_by = "Nome do aprovador"
 ```
 
-A data de atualizacao do cabecalho e gerada automaticamente com a data atual.
+A data de atualizacao do cabecalho fica fixa como `29/09/2025`.
 
 ## Como executar
 

@@ -25,6 +25,7 @@ DOCUMENT_SECTOR_DEFAULT = "Qualidade Industrial"
 DOCUMENT_REVISION_DEFAULT = "2"
 DOCUMENT_AUTHOR_DEFAULT = "Evelyn Ruth Silva"
 DOCUMENT_APPROVED_BY_DEFAULT = "Melina Favaro"
+DOCUMENT_UPDATED_AT_DEFAULT = "29/09/2025"
 
 DEFAULT_HEADERS = [
     "record_id",
@@ -122,7 +123,7 @@ def load_document_metadata() -> dict[str, str]:
             "INSPECAO_PINTURA_REVISION",
             DOCUMENT_REVISION_DEFAULT,
         ),
-        "updated_at": date.today().strftime("%d/%m/%Y"),
+        "updated_at": DOCUMENT_UPDATED_AT_DEFAULT,
         "author": get_secret_value("inspecao_pintura_author", "") or os.getenv(
             "INSPECAO_PINTURA_AUTHOR",
             DOCUMENT_AUTHOR_DEFAULT,
